@@ -6,12 +6,12 @@ So if you do not modify the Missionfile on your server, then upgrades will not w
 
 # How to install.
 
-1. Copy ExileClient_object_construction_upgrade.sqf and ExileServer_object_construction_network_upgradeConstructionRequest.sqf
+1. Copy `ExileClient_object_construction_upgrade.sqf` and `ExileServer_object_construction_network_upgradeConstructionRequest.sqf
 to a folder within your mission file.
-2. Locate config.cpp in your mission file and find the class CfgExileCustomCode section.
+2. Locate `config.cpp` in your mission file and find the `class CfgExileCustomCode` section.
 3. in this section (between the { and } brackets) add followind lines of code
-ExileClient_object_construction_upgradeShow = "YOUR_FOLDER_NAME\ExileClient_object_construction_upgradeShow.sqf";
-ExileClient_object_construction_upgrade = "YOUR_FOLDER_NAME\ExileClient_object_construction_upgrade.sqf";
+`ExileClient_object_construction_upgradeShow = "YOUR_FOLDER_NAME\ExileClient_object_construction_upgradeShow.sqf";`
+`ExileClient_object_construction_upgrade = "YOUR_FOLDER_NAME\ExileClient_object_construction_upgrade.sqf";`
 4. save config.cpp
 5. restart Server
 6. Done !!!
