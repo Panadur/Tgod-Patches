@@ -1,8 +1,10 @@
+
+
 This is a patch for a problem that is caused by simple adding Crazy Mike's Extended_Items_Exile to an Exile server. 
 By adding this mod the message format for the communication between the client and server when upgrading base building elements is altered. 
 So if you do not modify the Missionfile on your server, then upgrades will not work because neither the server nor the client understand the message and just disregards the messages.
 
-How to install.
+# How to install.
 
 1. Copy ExileClient_object_construction_upgrade.sqf and ExileServer_object_construction_network_upgradeConstructionRequest.sqf
 to a folder within your mission file.
