@@ -41,7 +41,7 @@ _nearestFlags = (nearestObjects [_position, ["Exile_Construction_Flag_Static"], 
 				
 				_radius = (_nearestFlags select 0) getVariable ["ExileTerritorySize", -1];
 				_dist=((AGLtoASL _position) distance (getPosASL (_nearestFlags select 0)));
-				if (((AGLtoASL _position) distance (getPosASL (_nearestFlags select 0))) < ((_radius^2)/(_radius/1.5)) then
+				if (((AGLtoASL _position) distance (getPosASL (_nearestFlags select 0))) < (_radius*1.5)) then
 				{
 					_location =  (_nearestFlags select 0) getVariable ["ExileLocation", _location];
 					_locationName = str _location;
